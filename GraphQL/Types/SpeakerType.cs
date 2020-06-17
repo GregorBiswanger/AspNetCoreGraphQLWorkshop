@@ -10,6 +10,7 @@ namespace MyConference.GraphQL.Types
             Field(speaker => speaker.Id);
             Field(speaker => speaker.Name).Description("The speakers name");
             Field(speaker => speaker.Description);
+            Field<ListGraphType<SessionType>>("sessions", resolve: context => context.Source.Sessions);
         }
     }
 }
