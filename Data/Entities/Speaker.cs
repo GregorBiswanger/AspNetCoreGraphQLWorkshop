@@ -1,5 +1,4 @@
-﻿using System.Collections.Generic;
-using MongoDB.Bson;
+﻿using MongoDB.Bson;
 using MongoDB.Bson.Serialization.Attributes;
 
 namespace MyConferece.Data.Entities
@@ -11,7 +10,7 @@ namespace MyConferece.Data.Entities
 
         public string Name { get; set; }
 
-        public string Description { get; set; }
+        public string? Description { get; set; }
 
         [BsonRepresentation(BsonType.ObjectId)]
         public IList<string> SessionIds { get; set; } = new List<string>();

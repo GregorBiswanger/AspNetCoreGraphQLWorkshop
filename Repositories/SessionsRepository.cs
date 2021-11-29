@@ -2,9 +2,6 @@
 using MongoDB.Driver.Linq;
 using MyConferece.Data;
 using MyConferece.Data.Entities;
-using System.Threading.Tasks;
-using System.Linq;
-using System.Collections.Generic;
 
 namespace MyConferece.Repositories
 {

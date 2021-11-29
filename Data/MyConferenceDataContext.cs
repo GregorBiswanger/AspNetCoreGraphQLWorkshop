@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Threading.Tasks;
-using MongoDB.Driver;
+﻿using MongoDB.Driver;
 using MongoDB.Driver.Core.Events;
 using MyConferece.Data.Entities;
 
@@ -56,7 +53,7 @@ namespace MyConferece.Data
                 FromTime = "15:00",
                 ToTime = "15:45",
                 Duration = "45",
-                Date = new DateTime(2020, 12, 08),
+                Date = new DateTime(2022, 12, 08),
                 Approved = false,
                 SpeakerIds = new List<string> { speaker.Id }
             };
@@ -70,7 +67,7 @@ namespace MyConferece.Data
                 FromTime = "17:30",
                 ToTime = "18:15",
                 Duration = "45",
-                Date = new DateTime(2020, 12, 08),
+                Date = new DateTime(2022, 12, 08),
                 Approved = true,
                 SpeakerIds = new List<string> { speaker.Id, speaker2.Id }
             };
@@ -84,7 +81,7 @@ namespace MyConferece.Data
                 FromTime = "14:00",
                 ToTime = "18:00",
                 Duration = "240",
-                Date = new DateTime(2020, 12, 09),
+                Date = new DateTime(2022, 12, 09),
                 Approved = true,
                 SpeakerIds = new List<string> { speaker.Id }
             };

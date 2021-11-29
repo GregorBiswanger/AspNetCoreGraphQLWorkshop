@@ -1,6 +1,4 @@
-﻿using System.Collections.Generic;
-
-namespace MyConferece.Data.Entities
+﻿namespace MyConferece.Data.Entities
 {
     public class SessionComposed : Session
     {
