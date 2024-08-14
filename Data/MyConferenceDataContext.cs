@@ -37,7 +37,7 @@ public class MyConferenceDataContext
 
         var speaker2 = new Speaker
         {
-            Name = "Robert Mühsig",
+            Name = "Florian Rappl",
             Description = "Softwareentwickler",
         };
 
@@ -91,12 +91,12 @@ public class MyConferenceDataContext
         await Sessions.InsertOneAsync(session3);
 
         var updateSpeaker = Builders<Speaker>.Update
-            .PushEach(speaker => speaker.SessionIds, new List<string> { session.Id, session2.Id, session3.Id });
+            .PushEach(s => s.SessionIds, new List<string> { session.Id, session2.Id, session3.Id });
 
         await Speakers.UpdateOneAsync(x => x.Id == speaker.Id, updateSpeaker);
 
         var updateSpeaker2 = Builders<Speaker>.Update
-            .Push(speaker => speaker.SessionIds, session2.Id);
+            .Push(s => s.SessionIds, session2.Id);
 
         await Speakers.UpdateOneAsync(x => x.Id == speaker2.Id, updateSpeaker2);
     }

@@ -1,4 +1,3 @@
-using MyConferece.Data;
 using MyConference.Data;
 using MyConference.Repositories;
 
