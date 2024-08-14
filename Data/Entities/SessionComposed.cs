@@ -1,7 +1,6 @@
-﻿namespace MyConferece.Data.Entities
+﻿namespace MyConference.Data.Entities;
+
+public class SessionComposed : Session
 {
-    public class SessionComposed : Session
-    {
-        public IList<SpeakerComposed> Speakers { get; set; } = new List<SpeakerComposed>();
-    }
+    public List<SpeakerComposed> Speakers { get; set; } = new();
 }

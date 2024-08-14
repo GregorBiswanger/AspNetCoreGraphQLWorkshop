@@ -1,5 +1,6 @@
 using MyConferece.Data;
-using MyConferece.Repositories;
+using MyConference.Data;
+using MyConference.Repositories;
 
 var builder = WebApplication.CreateBuilder(args);
 

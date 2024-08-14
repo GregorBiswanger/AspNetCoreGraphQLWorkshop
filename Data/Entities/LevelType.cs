@@ -1,8 +1,7 @@
-﻿namespace MyConferece.Data.Entities
+﻿namespace MyConference.Data.Entities;
+
+public enum LevelType
 {
-    public enum LevelType
-    {
-        Intermediate,
-        Advanced
-    }
+    Intermediate,
+    Advanced
 }

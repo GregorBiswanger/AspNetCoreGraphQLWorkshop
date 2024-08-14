@@ -1,8 +1,7 @@
-﻿namespace MyConferece.Data.Entities
+﻿namespace MyConference.Data.Entities;
+
+public enum CategoryType
 {
-    public enum CategoryType
-    {
-        WEB_BACKEND,
-        DOTNET_FRONTEND
-    }
+    WEB_BACKEND,
+    DOTNET_FRONTEND
 }
